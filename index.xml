@@ -17,6 +17,17 @@
     </item>
     
     <item>
+      <title>프로그램은 진화한다 </title>
+      <link>https://sihan-son.github.io/book/evo/</link>
+      <pubDate>Mon, 25 Sep 2023 22:06:47 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/evo/</guid>
+      <description>소프트웨어 아키텍트는 아직까지는 그렇게 대중적인 포지션은 아닌 것 같습니다. 하지만 포지션에 대해 고민하고, 변화에 대응하기 위한 설계를 고민하는 분들에게 도움이 될 만한 책입니다.
+쉬운 책은 아니고 고민할 영역이 많습니다. 소프트웨어에 대한 유연한 대응을 하기 위해선 기초 설계 단계에서부터 해야할 것이 참 많습니다. 설계가 튼튼해야 규모에 대응하고 문제를 풀어갈 수 있습니다. 커지면서 시간에 따라 무너지지 않기 위해선 아키텍트의 역량이 중요함을 강조합니다.
+거번넌스, 피트니스 함수 등 유연한 설계와 그에 대한 대응에 대한 깊이를 다루고 싶으면 꼭 읽어보기를 추천합니다.</description>
+    </item>
+    
+    <item>
       <title>프로덕트 매니지먼트, - 우리는 무엇을 하는가? -</title>
       <link>https://sihan-son.github.io/book/pm/</link>
       <pubDate>Sun, 23 Jul 2023 21:14:59 +0900</pubDate>
