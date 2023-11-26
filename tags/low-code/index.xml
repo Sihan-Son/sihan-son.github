@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>low code on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/low-code/</link>
+    <description>Recent content in low code on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 26 Nov 2023 22:37:54 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/low-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>노 코드 로우코드</title>
+      <link>https://sihan-son.github.io/book/nocode/</link>
+      <pubDate>Sun, 26 Nov 2023 22:37:54 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/nocode/</guid>
+      <description>노 코드/로우코드라는 용어가 생소하게 느껴질 수 있지만 이미 우리 삶 깊숙이 기술입니다. 직접적으로 코드를 이용하지 않고도 도구를 만들 수 있고, 비주얼 도구 등을 이용해 생산성 도구를 만드는 것이라고 할 수 있습니다.
+생산도구 제작의 문턱을 낮춰서 좀 더 다양한 도구를 만들 수 있습니다. 지금 한창 주가를 올리고 있는 OpenAI의 GPT, MS의 Copilot 등도 노 코드/로우코드 툴이라고 볼 수 있습니다. 노 코드/로우코드는 정말 말 그대로 코드가 없거나 적게 쓰는 것을 의미합니다. 이제는 개발자가 아니더라도 어플을 만들고, GPT를 이용해 코드를 스크립트로 업무 자동화 툴을 만드는 등 다양한 일을 하고 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
