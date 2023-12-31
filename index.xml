@@ -6,7 +6,17 @@
     <description>Recent content on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 26 Nov 2023 22:37:54 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Dec 2023 21:57:30 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>기계의 반칙, -기계와 사람의 2인 3각</title>
+      <link>https://sihan-son.github.io/book/cheat-of-machine/</link>
+      <pubDate>Sun, 31 Dec 2023 21:57:30 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/cheat-of-machine/</guid>
+      <description>오랜만에 기술을 이야기 하지만 기술서적이 아닌 책이었다. 인공지능의 역사를 현대에서 과거로 다시 현대로 넘어오면서 시발점부터 변곡점을 지나 어떻게 인간의 지능과 인공의 지능이 다른 길을 걷게 되었는지 이야기한다.
+어떻게 해야 기술을 잘 다룰 수 있고, 인공지능 분야의 엔지니어로 성공할 수 있다고 이야기 하지 않는다. 기술이 어떻게 쓰이고 있고, 갈등들이 생기며 봉합되어 가는 과정을 담담히 적어 내려갈 뿐이다. 알파고 쇼크 이후 우리는 인공지능을 생활에서 점점 자주 접하게 되었고, 2020년 ChatGPT-3 등장 이후 개발자들 사이에서나 유명했어던 OpenAI의 GPT는 초등학생도 과제에 쓰면서 뉴스에서 사회 문제로 다룰 정도로 당연한 기술이 되어버렸다.</description>
+    </item>
+    
     <item>
       <title>노 코드 로우코드</title>
       <link>https://sihan-son.github.io/book/nocode/</link>
