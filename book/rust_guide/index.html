@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    
+    <meta charset="UTF-8">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5414348543182733" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Sihan Son">
+<meta name="keywords" content="">
+<meta name="description" content="RUST가 커뮤니티에서 계속 이야기가 나오면서 C/C&#43;&#43;을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 rust를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 python을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 제이펍에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.">
+
+
+<meta property="og:description" content="RUST가 커뮤니티에서 계속 이야기가 나오면서 C/C&#43;&#43;을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 rust를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 python을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 제이펍에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="러스트 프로그래밍 공식 가이드">
+<meta name="twitter:title" content="러스트 프로그래밍 공식 가이드">
+<meta property="og:url" content="https://sihan-son.github.io/book/rust_guide/">
+<meta property="twitter:url" content="https://sihan-son.github.io/book/rust_guide/">
+<meta property="og:site_name" content="Sihan`s Blog">
+<meta property="og:description" content="RUST가 커뮤니티에서 계속 이야기가 나오면서 C/C&#43;&#43;을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 rust를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 python을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 제이펍에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.">
+<meta name="twitter:description" content="RUST가 커뮤니티에서 계속 이야기가 나오면서 C/C&#43;&#43;을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 rust를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 python을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 제이펍에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2024-03-09T21:26:03">
+  
+  
+    <meta property="article:modified_time" content="2024-03-09T21:26:03">
+  
+  
+  
+    
+      <meta property="article:section" content="book">
+    
+  
+  
+    
+      <meta property="article:tag" content="rust">
+    
+      <meta property="article:tag" content="programming">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+  <meta property="twitter:image" content="https://sihan-son.github.io/images/unicorn.jpg">
+
+
+    <title>러스트 프로그래밍 공식 가이드</title>
+
+    <link rel="icon" href="https://sihan-son.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://sihan-son.github.io/book/rust_guide/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://sihan-son.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-143237170-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://sihan-son.github.io/">Sihan`s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://sihan-son.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://sihan-son.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Sihan Son</h4>
+        
+          <h5 class="sidebar-profile-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/Sihan-Son" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/sihan_k_son/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/sihan-son-b43806120/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa fa-linkedin-square"></i>
+      
+      <span class="sidebar-button-desc">Linkedin</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/sihan830" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-facebook-square"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://sihan-son.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      러스트 프로그래밍 공식 가이드
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2024-03-09T21:26:03&#43;09:00">
+        
+  March 9, 2024
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/book">book</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p><code>RUST</code>가 커뮤니티에서 계속 이야기가 나오면서 C/C++을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 <code>rust</code>를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 <code>python</code>을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 <code>제이펍</code>에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.</p>
+<p>이 책은 프로그래밍을 아예 모르는 사람이 보기에는 그렇게 친절한 책은 아닙니다. <code>rust</code> 자체가 프로그래밍 입문용으로 적합하지 않다는 느낌도 있지만, 이 책은 정말 기존에 경험이 없다면 책을 읽으면서 이해가 힘들 부분들이 여럿 존재했습니다. 읽을 수록 <code>rust</code>라는 언어가 참 매력적이었습니다. 메모리를 접근하고 다루는 방법부터, 컴파일 메세지 등 프로그래머를 고민시키면서 좀 더 완성 된 프로그램을 만들어가는 느낌으로 코드를 작성할 수 있었습니다. 신규 입문서가 아니다보니 흔히 접하는 변수를 설명하고 변수를 선언하고 할당하는 것부터 설명하진 않습니다. 대신 <code>rust</code>가 가진 고유의 기능과 개념들 위주로 설명하면서 메모리의 스택과 힙에 대한 개념을 다시 잡기도 하고, 소유권, 라이프타임 등을 통해 GC가 없이 어떻게 메모리를 관리하고 적용하는지 이해 할 수 있어 좋은 경험이었습니다. 예시를 따라하면서 봐도 쉽지는 않습니다.</p>
+<p>책을 실물로 받아보면 두께에 질릴 수도 있지만 그만한 가치를 담고 있습니다. <code>rust</code>를 바로 쓰지 않더라도 이책을 통해서 프로그래밍을 하면서 다른 관점에 눈을 뜰 수 있는 기회입니다. <code>rust</code>를 배우고 싶으시다면 현재 이 책이 가장 적절한 방법일 듯합니다.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/rust/">rust</a>
+
+  <a class="tag tag--primary tag--small" href="https://sihan-son.github.io/tags/programming/">programming</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/cheat-of-machine/" data-tooltip="기계의 반칙, -기계와 사람의 2인 3각">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/rust_guide/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/rust_guide/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/rust_guide/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2024 Sihan Son. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://sihan-son.github.io/book/cheat-of-machine/" data-tooltip="기계의 반칙, -기계와 사람의 2인 3각">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://sihan-son.github.io/book/rust_guide/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://sihan-son.github.io/book/rust_guide/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://sihan-son.github.io/book/rust_guide/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Frust_guide%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Frust_guide%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fsihan-son.github.io%2Fbook%2Frust_guide%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://sihan-son.github.io/images/unicorn.jpg" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Sihan Son</h4>
+    
+      <div id="about-card-bio">Wir müssen wissen, Wir werden wissen    <br>
+2020 &amp; 2021 Hanbit reviewer<br>
+Manager of VAIS(AI &amp; Vision community)</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Programmer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://sihan-son.github.io/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://sihan-son.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/sihan-son.github.io\/book\/rust_guide\/';
+          
+            this.page.identifier = '\/book\/rust_guide\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'sihans-blog-1';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
+  </body>
+</html>
+

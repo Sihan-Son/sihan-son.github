@@ -36,7 +36,7 @@
       <guid>https://sihan-son.github.io/git/lick-git-author-setting/</guid>
       <description>commit은 한 번 밀리게 되었습니다. 생각을 해보니까 이걸 안해놓으면 나중에 commit할 때 꼬일거 같아서 설정을 먼저 해보겠습니다.
 add한 파일의 변경사항을 기록하는게 commit입니다. 게임도 저장할때 누구의 세이브 파일인지 알려줍니다. Git도 비슷하게 누가 해당 commit을 남기는지 알고 싶어합니다. Git이 원하느 정보는 두 가지입니다. 당신의 이름이 뭐고, 연락하고 싶을 때 보낼 메일 주소입니다.
-git config --global user.name &amp;#34;Hong-Gildong&amp;#34; git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
+git config --global user.name &amp;#34;Hong-Gildong&amp;#34;git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
     </item>
     
     <item>

@@ -6,7 +6,16 @@
     <description>Recent content on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 31 Dec 2023 21:57:30 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Mar 2024 21:26:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>러스트 프로그래밍 공식 가이드</title>
+      <link>https://sihan-son.github.io/book/rust_guide/</link>
+      <pubDate>Sat, 09 Mar 2024 21:26:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/rust_guide/</guid>
+      <description>RUST가 커뮤니티에서 계속 이야기가 나오면서 C/C++을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 rust를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 python을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 제이펍에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.</description>
+    </item>
+    
     <item>
       <title>기계의 반칙, -기계와 사람의 2인 3각</title>
       <link>https://sihan-son.github.io/book/cheat-of-machine/</link>
@@ -444,7 +453,7 @@ node와 프레임워크인 Express를 입문하기에 충분한 책이라고 생
       <guid>https://sihan-son.github.io/git/lick-git-author-setting/</guid>
       <description>commit은 한 번 밀리게 되었습니다. 생각을 해보니까 이걸 안해놓으면 나중에 commit할 때 꼬일거 같아서 설정을 먼저 해보겠습니다.
 add한 파일의 변경사항을 기록하는게 commit입니다. 게임도 저장할때 누구의 세이브 파일인지 알려줍니다. Git도 비슷하게 누가 해당 commit을 남기는지 알고 싶어합니다. Git이 원하느 정보는 두 가지입니다. 당신의 이름이 뭐고, 연락하고 싶을 때 보낼 메일 주소입니다.
-git config --global user.name &amp;#34;Hong-Gildong&amp;#34; git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
+git config --global user.name &amp;#34;Hong-Gildong&amp;#34;git config --global user.email &amp;#34;gildong@github.com&amp;#34; 이 명령어는 내 컴퓨터고 나 혼자 이 컴퓨터에서 Git을 사용한다! 하시는 분에게 추천합니다.</description>
     </item>
     
     <item>

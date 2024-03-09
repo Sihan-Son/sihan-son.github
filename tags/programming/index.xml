@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/programming/</link>
+    <description>Recent content in programming on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 09 Mar 2024 21:26:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>러스트 프로그래밍 공식 가이드</title>
+      <link>https://sihan-son.github.io/book/rust_guide/</link>
+      <pubDate>Sat, 09 Mar 2024 21:26:03 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/rust_guide/</guid>
+      <description>RUST가 커뮤니티에서 계속 이야기가 나오면서 C/C++을 대체하려는 목적을 가지고 있다는 내용을 볼 때마다 관심을 갖게되는 언어였습니다. 인터프리팅 언어를 메인으로 쓰고 있는 입장에선 사실 컴파일 언어를 다시끔 손대는 것에 묘한 두려움이 있었습니다. 설정과 컴파일 단계에서 고려해야 할 내용들이 큰 걸림돌이었습니다. 처음 rust를 알게 되었을 때 한국어로 된 자료도 별로 없던 시절 언어를 알게 되어 입문 할 엄두도 못내고 있는 상황에서 python을 주 언어로 삼아 일을 시작하게 되어 점점 더 멀어지는 상황이었는데 제이펍에서 책을 제공해주셔서 읽게 되어 재밌는 경험을 했습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
