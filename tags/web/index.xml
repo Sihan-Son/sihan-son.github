@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on Sihan`s Blog</title>
+    <title>web on Sihan`s Blog</title>
     <link>https://sihan-son.github.io/tags/web/</link>
-    <description>Recent content in Web on Sihan`s Blog</description>
+    <description>Recent content in web on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 23 May 2022 21:22:13 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2024 23:49:10 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fast Api로 배우는 백엔드 프로그래밍 with 클린 아키텍쳐</title>
+      <link>https://sihan-son.github.io/book/fast-api/</link>
+      <pubDate>Mon, 21 Oct 2024 23:49:10 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/book/fast-api/</guid>
+      <description>python 기반 웹 프레임워크라고 하면 대부분 django나 flask 정도를 많이 사용하고 자료 찾기도 용이합니다. 두 프레임워크 모두 풀 스택 프레임워크라서 rest api 서버를 구축하기 위해선 별도의 추가 라이브러리가 필요하고 추가적인 학습이 필요합니다. 아직 1 버전이 나오진 않았지만 fastapi는 이런 문제들을 일부 해결하는 동시에 속도까지 빠른 프레임워크입니다. 프레임워크들은 각자 만들어진 목적과 철학이 다르기 때문에 동일 선상에서 1대 1 비교는 쉽지 않습니다. 그래서 단순 우열을 가리기보다는 내 필요에 맞는 프레임워크가 뭔지를 고민하는게 좋다고 생각합니다.</description>
+    </item>
+    
     <item>
       <title>클론 코딩 줌, -웹의 새로운 영역-</title>
       <link>https://sihan-son.github.io/book/zoom_clone_coding_nico/</link>

@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Sihan`s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 09 Mar 2024 21:26:03 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2024 23:49:10 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fastapi</title>
+      <link>https://sihan-son.github.io/tags/fastapi/</link>
+      <pubDate>Mon, 21 Oct 2024 23:49:10 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sihan-son.github.io/tags/python/</link>
+      <pubDate>Mon, 21 Oct 2024 23:49:10 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://sihan-son.github.io/tags/web/</link>
+      <pubDate>Mon, 21 Oct 2024 23:49:10 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>programming</title>
       <link>https://sihan-son.github.io/tags/programming/</link>
@@ -112,15 +139,6 @@
       <pubDate>Sun, 29 Oct 2023 23:31:45 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://sihan-son.github.io/tags/python/</link>
-      <pubDate>Sun, 29 Oct 2023 23:31:45 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -616,15 +634,6 @@
       <pubDate>Mon, 23 May 2022 21:22:13 +0900</pubDate>
       
       <guid>https://sihan-son.github.io/tags/nico/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web</title>
-      <link>https://sihan-son.github.io/tags/web/</link>
-      <pubDate>Mon, 23 May 2022 21:22:13 +0900</pubDate>
-      
-      <guid>https://sihan-son.github.io/tags/web/</guid>
       <description></description>
     </item>
     
