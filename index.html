@@ -257,6 +257,63 @@ Manager of VAIS(AI &amp; Vision community)</h5>
     
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://sihan-son.github.io/triton/perf_analyzer/">
+          Triton Inference Server perf_analyzer 사용하기
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2025-02-01T21:14:20&#43;09:00">
+        
+  February 1, 2025
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://sihan-son.github.io/categories/triton">Triton</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        1. Docker Image perf_analyzer를 사용하기 위해서는 nvcr.io/nvidia/tritonserver:&lt;RELEASE&gt;-py3-sdk를 사용해야 한다. 인퍼런스 서버 구성을 위해서는 sdk가 붙지 않은 버전을 이용해도 문제가 없으나 해당 버전들에서는 perf_analyzer를 위한 환경이 구성되어 있지 않아 권장되지 않는다.
+&lt;RELEASE&gt;는 23.03 이후 버전만 가능하다. 2. Docker Compose로 구성해서 사용하기 triton_server: image: nvcr.io/nvidia/tritonserver:23.08-py3 networks: - tis_net ports: - 8000:8000 # HTTP 포트 인퍼런스를 담당하는 서버의 http나 grpc 중 사용하는 포트를 원하는 포트로 바인딩 해주면 된다. 같은 네트워크 내에선 크게 문제 없이 사용할 수 있다.
+      
+      <p>
+        <a href="https://sihan-son.github.io/triton/perf_analyzer/" class="postShorten-excerpt_link link">Continue reading</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
         <a class="link-unstyled" href="https://sihan-son.github.io/book/fast-api/">
           Fast Api로 배우는 백엔드 프로그래밍 with 클린 아키텍쳐
         </a>
@@ -574,64 +631,6 @@ Manager of VAIS(AI &amp; Vision community)</h5>
       
       <p>
         <a href="https://sihan-son.github.io/book/evo/" class="postShorten-excerpt_link link">Continue reading</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://sihan-son.github.io/book/pm/">
-          프로덕트 매니지먼트, - 우리는 무엇을 하는가? -
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2023-07-23T21:14:59&#43;09:00">
-        
-  July 23, 2023
-
-      </time>
-    
-    
-  
-  
-    <span>in</span>
-    
-      <a class="category-link" href="https://sihan-son.github.io/categories/book">Book</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        PM이란 단어는 참 여러 용례로 사용됩니다. 많은 현장에서 프로젝트 관리를 하는 프로젝트 매니저로 사용합니다. 이 책에서는 프로덕트 매니저에 대해 이야기합니다.
-프로덕트 매니저라는 직무명을 들었을 때 무슨 어떤 포지션인지 쉽게 감이 오지 않습니다. 책을 읽다보면 프로덕트 매니저가 이해가 가지 않았던게 당연하게 다가옵니다. PM이라는 직무에 대해 직관적으로 이해 할 수 있게 해당 직무에 대한 다양한 모습을 단계적으로 보여줍니다.
-PM의 가장 큰 역할은 소통이라는 것을 여실없이 보여주고 있는 책입니다. 저자 분의 소통 능력이 정말 뛰어나다고 느낀 점은 적재적소의 삽화와 물음표 없이 술술 읽히던 글이었습니다.
-      
-      <p>
-        <a href="https://sihan-son.github.io/book/pm/" class="postShorten-excerpt_link link">Continue reading</a>
         
       </p>
     </div>

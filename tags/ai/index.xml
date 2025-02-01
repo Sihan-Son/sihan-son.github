@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ai on Sihan`s Blog</title>
+    <link>https://sihan-son.github.io/tags/ai/</link>
+    <description>Recent content in ai on Sihan`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sat, 01 Feb 2025 21:14:20 +0900</lastBuildDate><atom:link href="https://sihan-son.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Triton Inference Server perf_analyzer 사용하기</title>
+      <link>https://sihan-son.github.io/triton/perf_analyzer/</link>
+      <pubDate>Sat, 01 Feb 2025 21:14:20 +0900</pubDate>
+      
+      <guid>https://sihan-son.github.io/triton/perf_analyzer/</guid>
+      <description>1. Docker Image perf_analyzer를 사용하기 위해서는 nvcr.io/nvidia/tritonserver:&amp;lt;RELEASE&amp;gt;-py3-sdk를 사용해야 한다. 인퍼런스 서버 구성을 위해서는 sdk가 붙지 않은 버전을 이용해도 문제가 없으나 해당 버전들에서는 perf_analyzer를 위한 환경이 구성되어 있지 않아 권장되지 않는다.
+&amp;lt;RELEASE&amp;gt;는 23.03 이후 버전만 가능하다. 2. Docker Compose로 구성해서 사용하기 triton_server: image: nvcr.io/nvidia/tritonserver:23.08-py3 networks: - tis_net ports: - 8000:8000 # HTTP 포트 인퍼런스를 담당하는 서버의 http나 grpc 중 사용하는 포트를 원하는 포트로 바인딩 해주면 된다. 같은 네트워크 내에선 크게 문제 없이 사용할 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>
